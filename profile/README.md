@@ -1,23 +1,32 @@
 # arno.host
 
-Private infrastructure for a small number of people. Not a product. Not seeking users, stars, or contributions.
+A private estate for one household. It is not a product, and it is not looking for users, stars or contributions.
 
-This page exists because GitHub organization profiles are public by default — not because anything here is meant to be found. If you're not one of the people this was built for, there's nothing below that will mean anything to you, and that's fine.
+GitHub makes organisation profiles public, so this page exists. The repositories behind it are private.
 
-## What lives here
+## What it does
 
-| Surface | Function |
+The household already has its resources: a mailbox, a media library, a history of test runs. arno.host decides **who may reach which of them**.
+
+- People sign in through a single identity provider.
+- Each permission is a grant held here and checked on every request, so revoking one takes effect on the next request rather than the next sign-in.
+- Being close to one part gives nobody broader access to another.
+
+## Where things stand
+
+| Area | State |
 |---|---|
-| Mail | Per-person mailboxes, gateway-mediated, no shared credentials |
-| Media | Family streaming |
-| Radio | Shared, queueable, always-on station |
-| Budgeting | Household forecasting and spend tracking |
-| Documentation | Runbooks, test reports, and canonical READMEs, once established |
+| Sign-in, members and grants | Live |
+| Store for test and run reports | Live, signed-in readers only |
+| Operator console | Live, operator only |
+| Household finance | In progress |
+| Household routines and the record of days (iPhone, iPad, Mac and Apple Watch) | Being built |
+| Radio | Partly built, paused |
+| Mail | Specified, waiting on access from the provider |
+| Media | Frozen |
 
-## Coordination
-
-Everything above is permission-scoped independently — nobody gets broader access by being closer to one system. A single orchestration layer, **Mary**, sits across all of it: the thing that notices before anyone has to ask, and routes to the right surface instead of being the surface itself.
+The table changes as parts go live. If something is missing, it is not built yet.
 
 ## Access
 
-Gated. If you're reading this from outside the circle it was built for, this is the whole tour.
+By invitation only. If you're reading this from outside the household, this page is the whole tour.
